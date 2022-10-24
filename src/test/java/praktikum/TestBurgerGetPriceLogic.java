@@ -1,4 +1,5 @@
 package praktikum;
+
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,9 +17,8 @@ public class TestBurgerGetPriceLogic {
     @Mock
     Ingredient testIngredient2;
 
-
     @Test
-    public void checkBurgerGetPriceLogic(){
+    public void checkBurgerGetPriceLogic() {
         Burger testBurger = new Burger();
         testBurger.setBuns(testBun);
         testBurger.addIngredient(testIngredient1);
@@ -28,11 +28,10 @@ public class TestBurgerGetPriceLogic {
         Mockito.verify(testBun, Mockito.times(1)).getPrice();
         Mockito.verify(testIngredient1, Mockito.times(1)).getPrice();
         Mockito.verify(testIngredient2, Mockito.times(1)).getPrice();
-
     }
 
     @Test
-    public void checkBurgerGetPriceLogic2(){
+    public void checkBurgerGetPriceLogic2() {
         Burger testBurger = new Burger();
         testBurger.setBuns(testBun);
         testBurger.addIngredient(testIngredient1);

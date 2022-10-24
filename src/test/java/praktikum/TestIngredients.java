@@ -4,24 +4,23 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class TestIngredients {
-
-
     public IngredientType expectedType = IngredientType.SAUCE;
     public String expectedName = "test_name";
     public float expectedPrice = 12.90F;
     Ingredient testIngredient = new Ingredient(expectedType, expectedName, expectedPrice);
 
     @Test
-    public void checkIngredientGetName(){
+    public void checkIngredientGetName() {
         Assert.assertEquals(testIngredient.getName(), expectedName);
     }
+
     @Test
-    public void checkIngredientGetPrice(){
+    public void checkIngredientGetPrice() {
         Assert.assertEquals(testIngredient.getPrice(), expectedPrice, 0.0F);
     }
 
     @Test
-    public void checkIngredientGetType(){
+    public void checkIngredientGetType() {
         Assert.assertEquals(testIngredient.getType(), expectedType);
     }
 }
