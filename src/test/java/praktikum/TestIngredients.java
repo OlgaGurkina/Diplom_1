@@ -11,16 +11,16 @@ public class TestIngredients {
 
     @Test
     public void checkIngredientGetName() {
-        Assert.assertEquals(testIngredient.getName(), expectedName);
+        Assert.assertEquals(expectedName, testIngredient.getName());
     }
 
     @Test
     public void checkIngredientGetPrice() {
-        Assert.assertEquals(testIngredient.getPrice(), expectedPrice, 0.0F);
+        Assert.assertEquals(expectedPrice, testIngredient.getPrice(), 0.0F);
     }
 
     @Test
     public void checkIngredientGetType() {
-        Assert.assertEquals(testIngredient.getType(), expectedType);
+        Assert.assertEquals(expectedType, testIngredient.getType());
     }
 }

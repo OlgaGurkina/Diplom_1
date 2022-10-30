@@ -16,7 +16,7 @@ public class TestBurgerGetPrice {
         testBurger.addIngredient(testIngredient);
         testBurger.setBuns(testBun);
         float actualPrice = testBurger.getPrice();
-        Assert.assertEquals(actualPrice, expectedPrice, 0.0F);
+        Assert.assertEquals(expectedPrice, actualPrice, 0.0F);
     }
 
     @Test(expected = NullPointerException.class)

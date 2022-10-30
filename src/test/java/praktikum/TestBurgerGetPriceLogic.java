@@ -40,6 +40,6 @@ public class TestBurgerGetPriceLogic {
         Mockito.when(testBun.getPrice()).thenReturn(10.00F);
         Mockito.when(testIngredient1.getPrice()).thenReturn(10.00F);
         Mockito.when(testIngredient2.getPrice()).thenReturn(10.00F);
-        Assert.assertEquals(testBurger.getPrice(), 40.00F, 0.0F);
+        Assert.assertEquals( 40.00F, testBurger.getPrice(),0.0F);
     }
 }

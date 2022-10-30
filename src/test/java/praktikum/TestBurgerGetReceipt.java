@@ -38,7 +38,7 @@ public class TestBurgerGetReceipt {
         testBurger.addIngredient(testIngredient3);
 
         String actualReceipt = testBurger.getReceipt();
-        Assert.assertEquals(actualReceipt, expected1);
+        Assert.assertEquals(expected1, actualReceipt);
     }
 
     @Test
@@ -51,7 +51,7 @@ public class TestBurgerGetReceipt {
         testBurger.removeIngredient(1);
 
         String actualReceipt = testBurger.getReceipt();
-        Assert.assertEquals(actualReceipt, expected2);
+        Assert.assertEquals(expected2, actualReceipt);
     }
 
     @Test
@@ -64,6 +64,6 @@ public class TestBurgerGetReceipt {
         testBurger.moveIngredient(1, 2);
 
         String actualReceipt = testBurger.getReceipt();
-        Assert.assertEquals(actualReceipt, expected3);
+        Assert.assertEquals(expected3, actualReceipt);
     }
 }

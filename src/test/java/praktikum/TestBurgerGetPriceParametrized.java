@@ -41,6 +41,6 @@ public class TestBurgerGetPriceParametrized {
         Burger testBurger = new Burger();
         testBurger.setBuns(testBun);
         testBurger.addIngredient(testIngredient);
-        Assert.assertEquals(testBurger.getPrice(), expectedPrice, 0.0F);
+        Assert.assertEquals( expectedPrice, testBurger.getPrice(), 0.0F);
     }
 }
